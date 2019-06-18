@@ -32,6 +32,7 @@ export default [
         <ul>
           <li>Javascript / Typescript</li>
           <li>C#</li>
+          <li>Terraform</li>
           <li>C++</li>
           <li>SQL</li>
           <li>Excel VBA</li>
@@ -40,7 +41,7 @@ export default [
         <ul>
           <li>React</li>
           <li>Redux</li>
-          <li>JQuery</li>
+          <li>Gatsby</li>
           <li>Sass</li>
         </ul>
         <div className='title'>Other</div>
