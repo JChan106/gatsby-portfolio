@@ -2,6 +2,9 @@ html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  background-color: #474747;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -157,7 +160,7 @@ legend {
   white-space: normal;
 }
 textarea {
-  overflow: auto;
+  /* overflow: auto; */
 }
 [type="checkbox"],
 [type="radio"] {
@@ -185,9 +188,9 @@ textarea {
   font: inherit;
 }
 html {
-  font: 112.5%/1.45em georgia, serif;
+  /* font: 112.5%/1.45em georgia, serif; */
   box-sizing: border-box;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 * {
   box-sizing: inherit;
@@ -200,7 +203,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  /* font-family: georgia, serif; */
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -405,7 +408,7 @@ pre {
   line-height: 1.42;
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  overflow: auto;
+  /* overflow: auto; */
   word-wrap: normal;
   padding: 1.45rem;
 }

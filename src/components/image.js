@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
@@ -13,20 +14,35 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
+ const ProfileImg = styled(Img)`
+  min-height: 250px;
+  min-width: 250px;
+  border-radius: 100%;
+  border: 10px solid #474747;
+  position: absolute;
+  z-index: 0;
+
+  @media (max-width: 900px) {
+    min-height: 100px;
+    min-width: 100px;
+    border-width: 5px;
+  }
+`;
+
 const Image = () => (
   <StaticQuery
     query={graphql`
       query {
-        placeholderImage: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+        placeholderImage: file(relativePath: { eq: "jackie.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 300) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => <ProfileImg fluid={data.placeholderImage.childImageSharp.fluid} />}
   />
 )
 export default Image
