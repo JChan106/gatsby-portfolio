@@ -81,7 +81,7 @@ const IndexPage = () => {
         <Header siteTitle="Jackie Chan"/>
         <Left/>
         <Right data={Data}/>
-        <Background params={particlesOptions} />
+        {/* <Background params={particlesOptions} /> */}
       </Container>
     </Layout>
   );
