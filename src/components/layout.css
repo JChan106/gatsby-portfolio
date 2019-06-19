@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Inconsolata', monospace;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: #474747;
@@ -160,7 +160,7 @@ legend {
   white-space: normal;
 }
 textarea {
-  /* overflow: auto; */
+  overflow: auto;
 }
 [type="checkbox"],
 [type="radio"] {

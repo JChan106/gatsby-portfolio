@@ -18,7 +18,6 @@ const Tabitem = (props) => {
       selectedTab={props.selectedTab === props.tab}
       onClick={() => props.onTabSelect(props.tab)}>
       {props.tab.title}
-      {/* <div className={props.selectedTab === props.tab ? 'sline' : 'line'}></div> */}
     </Tab>
   );
 }

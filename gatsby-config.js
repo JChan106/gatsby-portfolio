@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Jackie S. Chan`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Jackie Chan`,
+    description: `Jackie Chan's website portfolio`,
     author: `@jackieschan`,
   },
   plugins: [
@@ -26,12 +26,6 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
-    },
-    {
-      resolve: `gatsby-plugin-typography`,
-      options: {
-        pathToConfigModule: `src/utils/typography`,
-      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline

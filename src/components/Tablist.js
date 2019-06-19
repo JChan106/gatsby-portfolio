@@ -9,9 +9,10 @@ const NavigationBar = styled.div`
   justify-items: center;
   padding: 5px 5px;
   border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   
   @media (max-width: 900px) {
-    border-top-right-radius: 0;
+    border-radius: 0;
   }
 `;
 

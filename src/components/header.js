@@ -18,15 +18,14 @@ const LinkContainer = styled.h1`
   }
 `;
 
-const TitleLink = styled(Link)`
+const TitleLink = styled.a`
   color: white;
   text-decoration: none;
   line-height: 50px;
 
 `;
 
-
-const Logo = styled(Link)`
+const Logo = styled.a`
   text-decoration: none;
   font-size: 32px;
   position: absolute;
@@ -44,8 +43,8 @@ const Logo = styled(Link)`
 
 const Header = ({ siteTitle }) => (
   <HeaderWrapper>
-    <Logo to="/">JC</Logo>
-    <LinkContainer><TitleLink to="/">{siteTitle}</TitleLink></LinkContainer>
+    <Logo href="https://jackiechan.netlify.com/"><h1>JC</h1></Logo>
+    <LinkContainer><TitleLink href="https://jackiechan.netlify.com/">{siteTitle}</TitleLink></LinkContainer>
   </HeaderWrapper>
 )
 

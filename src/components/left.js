@@ -17,7 +17,9 @@ const Container = styled.div`
   background-color: rgba(45,45,45,0.98);
   padding: 20px;
   border-top-left-radius: 100%;
+  border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   grid-area: left;
   height: 100%;
   animation: ${fadeIn} .5s linear;
@@ -27,19 +29,15 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: space-around;
 
-
-
   @media (max-width: 900px) {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-radius: 0;
     width: 100%;
     flex-direction: row;
     justify-content: space-around;
-    height: initial;
   }
 `;
 
-const Link = styled.a`
+const ExternalLink = styled.a`
   color: white;
   text-decoration: none;
   white-space: nowrap;
@@ -57,10 +55,10 @@ const Left = () => {
   return (
     <Container>
       <Image/>
-      <Link target="_blank" href="/resume.pdf">Resume</Link>
-      <Link target="_blank" href="mailto:jackisivchan@gmail.com">Email</Link>
-      <Link target="_blank" href="https://www.linkedin.com/in/jackiesivchan/">LinkedIn</Link>
-      <Link target="_blank" href="https://github.com/JChan106">Github</Link>
+      <ExternalLink href="/resume.pdf">Resume</ExternalLink>
+      <ExternalLink target="_blank" href="mailto:jackisivchan@gmail.com">Email</ExternalLink>
+      <ExternalLink target="_blank" href="https://www.linkedin.com/in/jackiesivchan/">LinkedIn</ExternalLink>
+      <ExternalLink target="_blank" href="https://github.com/JChan106">Github</ExternalLink>
     </Container>
   );
 }

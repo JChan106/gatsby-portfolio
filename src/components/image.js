@@ -19,7 +19,6 @@ import Img from "gatsby-image"
   min-width: 250px;
   border-radius: 100%;
   border: 10px solid #474747;
-  position: absolute;
   z-index: 0;
 
   @media (max-width: 900px) {

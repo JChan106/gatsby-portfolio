@@ -24,9 +24,9 @@ const Container = styled.div`
 
   @media (max-width: 900px) {
     grid-template:
-    [row1-start] "header" 1fr [row1-end]
-    [row2-start] "left" 1fr [row2-end]
-    [row3-start] "right" 70% [row3-end]
+    [row1-start] "header" auto [row1-end]
+    [row2-start] "left" auto [row2-end]
+    [row3-start] "right" 1fr [row3-end]
     / 100%;
     row-gap: 10px;
     column-gap: 0;

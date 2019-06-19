@@ -8,9 +8,10 @@ const Container = styled.div`
   color: white;
   background-color: #3f3f3f;
   border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 
   @media (max-width: 900px) {
-    border-bottom-right-radius: 0;
+    border-radius: 0;
   }
 
 `;
