@@ -78,7 +78,7 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <Container>
-        <Header siteTitle="Jackie Chan"/>
+        {/* <Header siteTitle="Jackie Chan"/> */}
         <Left/>
         <Right data={Data}/>
         {/* <Background params={particlesOptions} /> */}
