@@ -21,7 +21,6 @@ const TitleLink = styled.a`
   color: white;
   text-decoration: none;
   line-height: 50px;
-
 `;
 
 const Logo = styled.a`
@@ -52,7 +51,7 @@ Header.propTypes = {
 }
 
 Header.defaultProps = {
-  siteTitle: ``,
+  siteTitle: `Jackie Chan`,
 }
 
 export default Header

@@ -15,24 +15,14 @@ import Img from "gatsby-image"
  */
 
 const Container = styled.div`
-  min-height: 250px;
-  min-width: 250px;
-  z-index: 0;
-
   @media (max-width: 900px) {
-    min-height: 100px;
-    min-width: 100px;
-    border-width: 5px;
+    display: none;
   }
 `;
 
 const ProfileImg = styled(Img)`
   border-radius: 100%;
   border: 10px solid #474747;
-
-  @media (max-width: 900px) {
-    border-width: 5px;
-  }
 `;
 
 const Image = () => (
@@ -41,8 +31,8 @@ const Image = () => (
       query {
         placeholderImage: file(relativePath: { eq: "jackie.jpg" }) {
           childImageSharp {
-            fluid(maxWidth: 700, grayscale: true) {
-              ...GatsbyImageSharpFluid
+            fixed(width: 250, quality: 100) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
@@ -50,7 +40,7 @@ const Image = () => (
     `}
     render={data => 
       <Container>
-        <ProfileImg fluid={data.placeholderImage.childImageSharp.fluid} />
+        <ProfileImg fixed={data.placeholderImage.childImageSharp.fixed} />
       </Container>
     }
   />
