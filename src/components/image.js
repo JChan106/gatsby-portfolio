@@ -14,16 +14,23 @@ import Img from "gatsby-image"
  * - `StaticQuery`: https://gatsby.dev/staticquery
  */
 
- const ProfileImg = styled(Img)`
+const Container = styled.div`
   min-height: 250px;
   min-width: 250px;
-  border-radius: 100%;
-  border: 10px solid #474747;
   z-index: 0;
 
   @media (max-width: 900px) {
     min-height: 100px;
     min-width: 100px;
+    border-width: 5px;
+  }
+`;
+
+const ProfileImg = styled(Img)`
+  border-radius: 100%;
+  border: 10px solid #474747;
+
+  @media (max-width: 900px) {
     border-width: 5px;
   }
 `;
@@ -34,14 +41,18 @@ const Image = () => (
       query {
         placeholderImage: file(relativePath: { eq: "jackie.jpg" }) {
           childImageSharp {
-            fluid(quality: 100) {
+            fluid(maxWidth: 700, grayscale: true) {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
     `}
-    render={data => <ProfileImg fluid={data.placeholderImage.childImageSharp.fluid} />}
+    render={data => 
+      <Container>
+        <ProfileImg fluid={data.placeholderImage.childImageSharp.fluid} />
+      </Container>
+    }
   />
 )
 export default Image
