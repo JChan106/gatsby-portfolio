@@ -5,14 +5,14 @@ export default [
     title: 'About',
     detail: (
       <>
-        <div className='title'>About Me</div>
+        <div>About Me</div>
           <ul>
             <li>Hi! I am a full stack software engineer with a passion for building web applications. I also enjoy playing basketball, gaming, and buying clothes. Here is a quote
             that I follow from one of my favorite actors: <br/>
             <i>"Don't try to be like Jackie. There is only one Jackie. Study computers instead."<br/>-Jackie Chan, Actor</i>
             </li>
           </ul>
-        <div className='title'>Education</div>
+        <div>Education</div>
         <ul>
           <li> University of California, Riverside </li>
            <ul>
@@ -28,35 +28,39 @@ export default [
     title:'Skills',
     detail: (
       <>
-        <div className='title'>Languages</div>
+        <div>Languages</div>
         <ul>
           <li>Javascript / Typescript</li>
           <li>C#</li>
-          <li>Terraform</li>
           <li>C++</li>
+          <li>Terraform</li>
+          <li>Bash</li>
           <li>SQL</li>
           <li>Excel VBA</li>
         </ul>
-        <div className='title'>Frameworks and Libraries</div>
+        <div>Frameworks and Libraries</div>
         <ul>
           <li>React</li>
           <li>Redux</li>
           <li>Gatsby</li>
           <li>Sass</li>
+          <li>Styled Components</li>
         </ul>
-        <div className='title'>Other</div>
+        <div>Other</div>
         <ul>
+          <li>AWS</li>
           <li>Git</li>
           <li>Adobe Photoshop</li>
           <li>Adobe Illustrator</li>
           <li>Unity</li>
         </ul>
-        <div className='title'>Coursework</div>
+        <div>Coursework</div>
         <ul>
           <li>Object Oriented Programming</li>
           <li>Data Structures and Algorithms</li>
-          <li>Machine Learning</li>
-          <li>Software Engineering</li>
+          <li>Information Retrieval</li>
+          <li>Embedded Systems</li>
+          <li>Databade Management Systems</li>
         </ul>
       </>
     ),
@@ -66,17 +70,17 @@ export default [
     title:'Projects',
     detail: (
       <>
-        <div className='title'><img className='gifs' src='https://i.imgur.com/k3OP6Kf.gif' alt="DoodlyDoo" width="80" height="125"/>DoodlyDoo</div>
+        <div><img src='https://i.imgur.com/k3OP6Kf.gif' alt="DoodlyDoo" width="80" height="125"/>DoodlyDoo</div>
         <ul>
           <li>Created an appointment app, which allows users to plan events.</li>
           <li>Main features include a friends list, user permissions of who they can invite, commenting section of appointments, and more.</li>
           <li>Built using React Native, Redux, Firebase, and Bootstrap.</li>
         </ul>
-        <div className='title'><img className='gifs' src='https://i.imgur.com/rMnXxkj.gif' alt="PostPin" width="125" height="125"/>PostPin</div>
+        <div><img src='https://i.imgur.com/rMnXxkj.gif' alt="PostPin" width="125" height="125"/>PostPin</div>
         <ul>
           <li>Created a Multi-page web app which provides College students a platform to Buy/Sell/Trade</li>
           <li> Made using good practices: collaborators made pull requests, Kanban board to organize tasks, weekly meetings</li>
-          <li>Built using: ReactJS, Sass, Bootstrap, Firebase, and Webpack</li>
+          <li>Built using: ReactJS, Sass, Bootstrap, Firebase</li>
         </ul>
         <div className='title'>LED Game</div>
         <ul>
@@ -98,7 +102,13 @@ export default [
     title:'Experience',
     detail: (
       <>
-        <div className='title'>Center for Environmental Research and Technology</div>
+        <div>Kelley Blue Book - Full Stack Software Engineer</div>
+          <ul>
+            <li>Worked in a scrum team which developed consumer facing applications for the automotive industry.</li>
+            <li>Created user interfaces, APIs, and Terraform to build the infrastructure of our applications.</li>
+            <li>Decomposed a monolith into micro-services while adding additional functionality to each of the applications.</li>
+          </ul>
+        <div>Center for Environmental Research and Technology</div>
           <ul>
             <li>Managed the solar energy website which uses PHP and SQL</li>
             <li>Reduced workload for researchers by creating Excel VBA Macros</li>

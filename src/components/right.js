@@ -17,13 +17,12 @@ const Container = styled.div`
   grid-area: right;
   max-height: 100%;
   max-width: 100%;
-  animation: ${fadeIn} .5s linear;
+  animation: ${fadeIn} .3s linear;
   display: flex;
   flex-direction: column;
   z-index: 1;
-
-  @media (max-width: 900px) {
-  }
+  box-shadow: 3px 3px 10px 2px rgba(35,35,35,.5);
+  border-radius: 10px;
 `;
 
 const Right = (props) => {

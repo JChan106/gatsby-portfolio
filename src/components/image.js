@@ -22,7 +22,9 @@ const Container = styled.div`
 
 const ProfileImg = styled(Img)`
   border-radius: 100%;
-  border: 10px solid #474747;
+  border: 5px solid #3d3d3d;
+  box-shadow: 3px 3px 10px 2px rgba(35,35,35,.5);
+
 `;
 
 const Image = () => (

@@ -22,12 +22,13 @@ const Container = styled.div`
   border-bottom-right-radius: 10px;
   grid-area: left;
   height: 100%;
-  animation: ${fadeIn} .5s linear;
+  animation: ${fadeIn} .3s linear;
   justify-self: center;
   align-self: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  box-shadow: 3px 3px 10px 2px rgba(35,35,35,.5);
 
   @media (max-width: 900px) {
     border-radius: 0;
