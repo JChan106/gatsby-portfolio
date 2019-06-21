@@ -56,7 +56,7 @@ const Left = () => {
   return (
     <Container>
       <Image/>
-      <ExternalLink href="/resume.pdf">Resume</ExternalLink>
+      <ExternalLink target="_blank" href="/resume.pdf">Resume</ExternalLink>
       <ExternalLink target="_blank" href="mailto:jackisivchan@gmail.com">Email</ExternalLink>
       <ExternalLink target="_blank" href="https://www.linkedin.com/in/jackiesivchan/">LinkedIn</ExternalLink>
       <ExternalLink target="_blank" href="https://github.com/JChan106">Github</ExternalLink>
