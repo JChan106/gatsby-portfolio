@@ -24,14 +24,12 @@ const Logo = styled.a`
   padding: 10px;
   /* height: 60px; */
   background-color: rgb(72, 175, 122);
-  letter-spacing: -1px;
   text-align: center;
   color: white;
-  font-weight: bold;
   line-height: 30px;
   border-bottom-right-radius: 10px;
   z-index: 1;
-  animation: ${slide} .5s ease-out 1s;
+  animation: ${slide} .5s ease-out;
   transform: translate(-100%);
   animation-fill-mode: forwards;
 `;
