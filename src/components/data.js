@@ -7,7 +7,7 @@ export default [
       <>
         <div>About Me</div>
           <ul>
-            <li>Hi! I am a full stack software engineer with a passion for building web applications. I also enjoy playing basketball, gaming, and buying clothes. Here is a quote
+            <li>Hi! I am a full stack software engineer with a passion for building web applications. I also enjoy playing basketball, gaming, and fashion. Here is a quote
             that I follow from one of my favorite actors: <br/>
             <i>"Don't try to be like Jackie. There is only one Jackie. Study computers instead."<br/>-Jackie Chan, Actor</i>
             </li>
