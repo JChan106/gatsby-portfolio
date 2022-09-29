@@ -52,6 +52,10 @@ function SEO({ description, lang, meta, keywords, title }) {
           content: `website`,
         },
         {
+          property: `og:image`,
+          content: `https://jackiechan.netlify.app/static/c129a75411d0405b41c620c5e1a9dc50/e3fb7/jackie.jpg`,
+        },
+        {
           name: `twitter:card`,
           content: `summary`,
         },
